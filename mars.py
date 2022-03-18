@@ -80,7 +80,7 @@ def promotion_image():
                                 </div>'''
 
 
-@app.route('/form_sample', methods=['POST', 'GET'])
+@app.route('/astronaut_selection', methods=['POST', 'GET'])
 def form_sample():
     if request.method == 'GET':
         return f'''<!doctype html>
@@ -156,13 +156,6 @@ def form_sample():
                           </body>
                         </html>'''
     elif request.method == 'POST':
-        print(request.form['email'])
-        print(request.form['password'])
-        print(request.form['class'])
-        print(request.form['file'])
-        print(request.form['about'])
-        print(request.form['accept'])
-        print(request.form['sex'])
         return "Форма отправлена"
 
 
